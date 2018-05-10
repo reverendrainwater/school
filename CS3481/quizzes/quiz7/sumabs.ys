@@ -1,0 +1,44 @@
+# 
+# Write a Y86 program calculates the sum of the absolute values
+# of all elements in list. The skeleton code is provided below.
+# The main function calls your function, 'sumabs', passing it
+# the address of the list in %rdi and the number of elements
+# in the list in %rsi. You should return the sum in %rax
+# Your code should not depend on the specific list and count provided below. 
+#
+			.pos 0
+main:		irmovq	stack,%rsp
+			irmovq	count,%rsi
+			mrmovq	(%rsi),%rsi
+			irmovq	list,%rdi
+			call	sumabs
+			halt
+
+sumabs:
+			
+
+
+
+
+
+			ret     #return--result should be in %rax
+
+########## Leave this line here (used for auto-testing) #####################
+			.align	8
+count:		.quad	12
+list:
+			.quad	-4
+			.quad	7
+			.quad	-10
+			.quad	-6
+			.quad	15
+			.quad	1
+			.quad	-8
+			.quad	-22
+			.quad	17
+			.quad	-14
+			.quad	-5
+			.quad	13
+	
+			.pos	0x200
+stack:

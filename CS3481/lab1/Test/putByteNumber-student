@@ -1,0 +1,9 @@
+Test putByteNumber...
+putByteNumber(0,aa,123456789abcdef): 123456789abcdaa
+putByteNumber(1,aa,123456789abcdef): 123456789abaaef
+putByteNumber(2,aa,123456789abcdef): 123456789aacdef
+putByteNumber(3,aa,123456789abcdef): 1234566aaabcdef
+putByteNumber(4,aa,123456789abcdef): 123450089abce99
+putByteNumber(5,aa,123456789abcdef): 123006789ac77ef
+putByteNumber(6,aa,123456789abcdef): 10045678a55cdef
+putByteNumber(7,aa,123456789abcdef): 23456733abcdef

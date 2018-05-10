@@ -1,0 +1,33 @@
+void parser::S(char& curr){
+	
+	if (curr == 'i' || curr == 'c' || curr == 'n'){
+		T(curr);
+	} else if (curr == 'p'){
+		match('p', curr);
+		match('d', curr);
+	} else if (curr == 'a'){
+		match('a', curr);
+		match('[', curr);
+		T(curr);
+		match(']', curr);
+		match('o', curr);
+		S(curr);
+	} else {
+		error();
+	}
+}
+
+void parser::T(char& curr){
+	
+	if (curr == 'i'){
+		match('i', curr);
+	} else if (curr == 'c'){
+		match('c', curr);
+	} else if (curr == 'n'){
+		match('n', curr);
+		match('t', curr);
+		match('n', curr);
+	} else {
+		error();
+	}
+}

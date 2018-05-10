@@ -1,0 +1,86 @@
+Cycle 0. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0000
+ D: stat: BUB, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x0
+ E: stat: BUB, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: BUB, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: BUB, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 1. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0001
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x1
+ E: stat: BUB, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: BUB, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: BUB, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 2. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0002
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x2
+ E: stat: AOK, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: BUB, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: BUB, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 3. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0003
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x3
+ E: stat: AOK, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: AOK, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: BUB, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 4. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0004
+ D: stat: HLT, inst: halt  , rA: ----, rB: ----, valC: 0x0, valP: 0x4
+ E: stat: AOK, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: AOK, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: AOK, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 5. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0005
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x5
+ E: stat: HLT, inst: halt  , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: AOK, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: AOK, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 6. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0006
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x6
+ E: stat: AOK, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: HLT, inst: halt  , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: AOK, inst: nop   , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Cycle 7. CC: ZF=1 SF=0 OF=0
+ F: predPC = 0x0007
+ D: stat: AOK, inst: nop   , rA: ----, rB: ----, valC: 0x0, valP: 0x7
+ E: stat: AOK, inst: nop   , valC: 0x0, valA: 0x0, valB: 0x0
+ E: srcA: ----, srcB: ----, dstE: ----, dstM: ----
+ M: stat: AOK, inst: nop   , Cnd: 0
+ M: valE: 0x0, valA: 0x0, dstE: ----, dstM: ----
+ W: stat: HLT, inst: halt  , valE: 0x0, valM: 0x0, dstE: ----, dstM: ----
+
+Processor State:
+CC: ZF=1 SF=0 OF=0
+
+Registers:
+%rax:0000000000000000 %rcx:0000000000000000 %rdx:0000000000000000 %rbx:0000000000000000
+%rsp:0000000000000000 %rbp:0000000000000000 %rsi:0000000000000000 %rdi:0000000000000000
+ %r8:0000000000000000  %r9:0000000000000000 %r10:0000000000000000 %r11:0000000000000000
+%r12:0000000000000000 %r13:0000000000000000 %r14:0000000000000000
+
+Memory:
+0x0000: 1010101000101010 0000000000000000 0000000000000000 0000000000000000
+0x0020: 0000000000000000 0000000000000000 0000000000000000 0000000000000000*
+
+

@@ -1,0 +1,30 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	GET_NUM           3006
+//	GN_TOP            3009
+//	GN_SR1            301D
+//	GN_SR2            301E
+//	GN_SR7            301F
+//	GN_N30            3020
+//	GN_48             3021
+//	GN_S1             3022
+//	MULT              303F
+//	M_TOP             3045
+//	M_END             3048
+//	M_SR2             304A
+//	DIV               304B
+//	D_TOP             3054
+//	D_END             3058
+//	D_ZERO            305B
+//	D_SR1             3060
+//	D_SR2             3061
+//	MOD               3062
+//	MD_TOP            306B
+//	MD_END            306E
+//	MD_ZERO1          3071
+//	MD_ZERO2          3075
+//	MD_SR1            307A
+//	MD_SR2            307B
+

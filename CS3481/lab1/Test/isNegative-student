@@ -1,0 +1,4 @@
+Test isNegative...
+Testing isNegative(8765432187654321): 1
+Testing isNegative(8765432187654321): 1
+Testing isNegative(0): 0

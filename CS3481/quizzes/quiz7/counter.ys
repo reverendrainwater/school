@@ -1,0 +1,49 @@
+# 
+# Write a Y86 program calculates the counts the number of times
+# 'value' appears in a list of integers. 
+# The skeleton code is provided below.
+# The main function calls your function, 'counter', passing it
+# the address of the list in %rdi, the value to be counted
+# in %rsi, and the number of items in the list in %rdx. 
+# You should return the the number of times it occurs in %rax.
+# Your code should not depend on the specific list and value provided below. 
+#
+			.pos 0
+main:		irmovq	stack,%rsp
+			irmovq	value,%rsi
+			mrmovq	(%rsi),%rsi
+			irmovq	listsize,%rdx
+			mrmovq	(%rdx),%rdx
+			irmovq	list,%rdi
+			call	counter
+			halt
+
+counter:
+			# Your code follows...
+
+
+
+
+
+			ret     #return--result should be in %rax
+
+########## Leave this line here (used for auto-testing) #####################
+			.align	8
+listsize:	.quad	12		
+value:		.quad	3
+list:
+			.quad	-1
+			.quad	3
+			.quad	5
+			.quad	9
+			.quad	3
+			.quad	-4
+			.quad	3
+			.quad	7
+			.quad	2
+			.quad	3
+			.quad	-10
+			.quad	-8
+	
+			.pos	0x200
+stack:

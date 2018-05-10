@@ -1,0 +1,4 @@
+65c65
+< getBits(0,63,abcdef0123456789): 0
+---
+> getBits(0,63,abcdef0123456789): abcdef0123456789

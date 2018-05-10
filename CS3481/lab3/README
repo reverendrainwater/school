@@ -1,0 +1,22 @@
+The lab3 directory contains:
+Test
+A subdirectory containing input .obj files to disassemble
+
+makefile
+An empty makefile as a reminder that you should create one
+to build your program. You may use your Tools.cpp from lab1
+if you need to use some bitmanipulation functions.
+
+efbdis
+My version of the disassembler. You can use this to generate
+output for each .obj file and compare it to what your
+disassembler generates. You can use the diff utility to help.
+
+For example, if you do the following:
+
+y86dis file.obj > myoutput
+efbdis file.obj > efboutput
+diff myoutput efboutput
+
+the diff command should produce no output (files are identical)
+
